@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pavithradharshini Saravanan | Developer Portfolio</title>
+  <meta name="description" content="Full Stack Developer specializing in MERN stack development and building innovative, responsive web solutions." />
+  <meta property="og:title" content="Pavithradharshini Saravanan | Developer" />
+  <meta property="og:description" content="Full Stack Developer — MERN Stack, Web Apps, Problem Solver." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+
+<!-- Cursor Glow -->
+<div class="cursor-glow" id="cursorGlow"></div>
+
+<!-- Particle Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav class="navbar" id="navbar">
+  <span class="nav-brand">PS<span style="color:var(--text-secondary);">.</span></span>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certifications</a></li>
+    <li><a href="#achievements">Achievements</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Me</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav" id="mobileNav">
+  <a href="#about" class="mobile-link">About</a>
+  <a href="#skills" class="mobile-link">Skills</a>
+  <a href="#education" class="mobile-link">Education</a>
+  <a href="#projects" class="mobile-link">Projects</a>
+  <a href="#experience" class="mobile-link">Experience</a>
+  <a href="#certifications" class="mobile-link">Certifications</a>
+  <a href="#contact" class="mobile-link">Contact</a>
+</div>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="home">
+  <div class="hero-bg-orb hero-bg-orb-1"></div>
+  <div class="hero-bg-orb hero-bg-orb-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Available for Opportunities
+      </div>
+      <h1 class="hero-name">
+        Pavithradharshini<br /><span class="highlight">Saravanan</span>
+      </h1>
+      <div class="hero-role">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </div>
+      <p class="hero-bio">
+        Enthusiastic and dedicated developer with a strong foundation in MERN stack development. 
+        Skilled in building innovative, responsive web solutions and collaborating with multidisciplinary teams 
+        to achieve high quality outcomes.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">
+          <span>View Projects</span>
+          <span>↓</span>
+        </a>
+        <a href="#contact" class="btn-secondary">
+          <span>Let's Connect</span>
+          <span>→</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number" data-target="3">0</div>
+          <div class="stat-label">Projects Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Internships</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="8" data-suffix=".72">0</div>
+          <div class="stat-label">CGPA</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" data-target="2" data-suffix="+">0</div>
+          <div class="stat-label">Certifications</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-wrapper">
+        <div class="hero-img-ring"></div>
+        <div class="hero-img-ring-inner"></div>
+        <img src="profile.png" alt="Pavithradharshini Saravanan" class="hero-img" />
+      </div>
+      <div class="hero-floating-badge floating-badge-1">
+        <span class="badge-icon">⚛️</span>
+        <span>React.js</span>
+      </div>
+      <div class="hero-floating-badge floating-badge-2">
+        <span class="badge-icon">🍃</span>
+        <span>MongoDB</span>
+      </div>
+      <div class="hero-floating-badge floating-badge-3">
+        <span class="badge-icon">🔗</span>
+        <span>Node.js</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ABOUT ======================== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-image-container reveal-left">
+        <div class="about-image-frame">
+          <img src="profile.png" alt="Pavithradharshini Saravanan" />
+        </div>
+        <div class="about-decor"></div>
+        <div class="about-decor-2"></div>
+      </div>
+      <div class="about-info">
+        <div class="section-header" style="text-align:left;margin-bottom:2rem;">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Passionate about <span>building</span> the web</h2>
+        </div>
+        <p class="about-bio-text">
+          I'm a BE student at Dr. N G P Institute of Technology (2023–2027) with a strong foundation in 
+          MERN stack development. I love solving real-world problems through technology and building 
+          applications that create meaningful impact.
+        </p>
+        <p class="about-bio-text">
+          Beyond coding, I bring discipline from martial arts — I'm a Silambam champion with Noble World 
+          Record and multiple District & State Gold medals. I'm also the Co-chairman of NSS at my 
+          institution, reflecting my commitment to community and leadership.
+        </p>
+        <div class="about-highlights">
+          <div class="about-highlight-item">
+            <div class="highlight-icon">🎓</div>
+            <div class="highlight-text">
+              <strong>B.E. Engineering</strong>
+              <span>Dr. NGP Institute of Technology</span>
+            </div>
+          </div>
+          <div class="about-highlight-item">
+            <div class="highlight-icon">📍</div>
+            <div class="highlight-text">
+              <strong>Location</strong>
+              <span>Pitchampalayam, Tirupur</span>
+            </div>
+          </div>
+          <div class="about-highlight-item">
+            <div class="highlight-icon">🏆</div>
+            <div class="highlight-text">
+              <strong>World Record</strong>
+              <span>3-hr Silambam Rotation</span>
+            </div>
+          </div>
+          <div class="about-highlight-item">
+            <div class="highlight-icon">🌐</div>
+            <div class="highlight-text">
+              <strong>Languages</strong>
+              <span>Tamil · English · Malayalam</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-socials">
+          <a href="https://linkedin.com/in/Pavithradharshini_saravanan" target="_blank" class="social-link" title="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+          <a href="https://github.com/Pavithradharshini-Saravanan" target="_blank" class="social-link" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+          </a>
+          <a href="mailto:pavisaravanan.2006@gmail.com" target="_blank" class="social-link" title="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/Pavithradharshini_saravanan/" target="_blank" class="social-link" title="LeetCode">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== SKILLS ======================== -->
+<section id="skills">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Expertise</span>
+      <h2 class="section-title">My <span>Technical</span> Skills</h2>
+      <p class="section-desc">A combination of technical proficiency and strong personality traits that drive quality outcomes.</p>
+    </div>
+
+    <div class="skills-layout">
+      <!-- Left: Tag cloud -->
+      <div>
+        <div class="skills-category reveal">
+          <div class="skills-category-title">Programming & Languages</div>
+          <div class="skills-grid">
+            <span class="skill-tag" style="border-color:rgba(124,58,237,0.45);color:var(--text-primary);"><span class="skill-emoji">☕</span> Java</span>
+            <span class="skill-tag"><span class="skill-emoji">🔵</span> C Programming</span>
+            <span class="skill-tag"><span class="skill-emoji">🐍</span> Python</span>
+            <span class="skill-tag"><span class="skill-emoji">🗄️</span> MySQL</span>
+            <span class="skill-tag"><span class="skill-emoji">🌐</span> HTML</span>
+            <span class="skill-tag"><span class="skill-emoji">🎨</span> CSS</span>
+            <span class="skill-tag"><span class="skill-emoji">⚡</span> JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <div class="skills-category-title">Frameworks & Runtime</div>
+          <div class="skills-grid">
+            <span class="skill-tag"><span class="skill-emoji">⚛️</span> React.js</span>
+            <span class="skill-tag"><span class="skill-emoji">🚂</span> Express.js</span>
+            <span class="skill-tag"><span class="skill-emoji">🔗</span> Node.js</span>
+            <span class="skill-tag"><span class="skill-emoji">🍃</span> MongoDB</span>
+            <span class="skill-tag"><span class="skill-emoji">🐍</span> FastAPI</span>
+            <span class="skill-tag"><span class="skill-emoji">🖥️</span> Tkinter</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <div class="skills-category-title">Soft Skills</div>
+          <div class="skills-grid">
+            <span class="skill-tag">🧩 Analytic Solver</span>
+            <span class="skill-tag">⏰ Time Discipline</span>
+            <span class="skill-tag">🔄 Adaptability</span>
+            <span class="skill-tag">🎯 Focused</span>
+          </div>
+        </div>
+        <div class="skills-category reveal">
+          <div class="skills-category-title">Areas of Interest</div>
+          <div class="skills-grid">
+            <span class="skill-tag">🗄️ DBMS</span>
+            <span class="skill-tag">🌐 Web Programming</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Skill bars -->
+      <div class="skill-bars reveal">
+        <div class="skills-category-title">Proficiency</div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">MERN Stack</span>
+            <span class="skill-bar-pct">88%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="88"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">HTML / CSS / JavaScript</span>
+            <span class="skill-bar-pct">92%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="92"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Java</span>
+            <span class="skill-bar-pct">85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">C Programming</span>
+            <span class="skill-bar-pct">79%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="79"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">MySQL / MongoDB</span>
+            <span class="skill-bar-pct">82%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="82"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-header">
+            <span class="skill-bar-name">Python</span>
+            <span class="skill-bar-pct">72%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== EDUCATION ======================== -->
+<section id="education">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Academic Journey</span>
+      <h2 class="section-title">My <span>Education</span></h2>
+      <p class="section-desc">Building a strong foundation through dedicated academic pursuit and continuously learning new technologies.</p>
+    </div>
+
+    <div class="education-timeline">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot">🎓</div>
+        <div class="timeline-card">
+          <div class="timeline-period">2023 – 2027 (Ongoing)</div>
+          <div class="timeline-institution">Dr. N G P Institute of Technology</div>
+          <div class="timeline-degree">Bachelor of Engineering</div>
+          <span class="timeline-badge">🏅 CGPA 8.72</span>
+        </div>
+      </div>
+
+      <div class="timeline-item reveal">
+        <div class="timeline-dot">📚</div>
+        <div class="timeline-card">
+          <div class="timeline-period">2017 – 2023</div>
+          <div class="timeline-institution">Jaivabai Model Municipal Girls Higher Secondary School</div>
+          <div class="timeline-degree">Schooling (HSC)</div>
+          <span class="timeline-badge">📊 HSC 85%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== PROJECTS ======================== -->
+<section id="projects">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Portfolio</span>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <p class="section-desc">Real-world applications built to solve genuine problems using modern technologies.</p>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card reveal" style="--i:0;">
+        <div class="project-number">01</div>
+        <div class="project-icon">🛡️</div>
+        <div class="project-title">SafeNest</div>
+        <p class="project-desc">
+          A women's safety platform with geo-fencing, SOS alerts, and real-time danger zone detection. 
+          Provides immediate assistance through integrated backend services and location-based monitoring.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">HTML</span>
+          <span class="project-tag">CSS</span>
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Python FastAPI</span>
+          <span class="project-tag">Geo-fencing</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="--i:1;">
+        <div class="project-number">02</div>
+        <div class="project-icon">🎵</div>
+        <div class="project-title">Moody Music</div>
+        <p class="project-desc">
+          A smart desktop application that recommends songs based on the user's mood using AI-powered 
+          mood detection. Blends psychology with technology for a personalized listening experience.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Tkinter</span>
+          <span class="project-tag">SQL</span>
+          <span class="project-tag">AI / ML</span>
+          <span class="project-tag">Mood Detection</span>
+        </div>
+      </div>
+
+      <div class="project-card reveal" style="--i:2;">
+        <div class="project-number">03</div>
+        <div class="project-icon">💬</div>
+        <div class="project-title">TranslaChat</div>
+        <p class="project-desc">
+          A smart web-based chat application enabling real-time message translation for seamless 
+          cross-language communication. Built on the MERN stack with live translation APIs.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">MongoDB</span>
+          <span class="project-tag">Express.js</span>
+          <span class="project-tag">React.js</span>
+          <span class="project-tag">Node.js</span>
+          <span class="project-tag">Real-time</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== EXPERIENCE ======================== -->
+<section id="experience">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Work Experience</span>
+      <h2 class="section-title">Internships & <span>Training</span></h2>
+      <p class="section-desc">Hands-on experience gained through industry internships and professional training programs.</p>
+    </div>
+
+    <div class="experience-grid">
+
+      <div class="exp-card reveal">
+        <div class="exp-type-badge">✅ Offline · 15 Days</div>
+        <div class="exp-period">2025</div>
+        <div class="exp-company">App Innovation Technologies</div>
+        <div class="exp-role">MERN Stack Development Intern · Coimbatore</div>
+        <p class="exp-desc">
+          Completed an intensive 15-day offline internship focused on full-stack MERN development. 
+          Gained hands-on experience building scalable web applications, REST APIs with Express.js, 
+          and dynamic frontends with React.js.
+        </p>
+      </div>
+
+      <div class="exp-card reveal">
+        <div class="exp-type-badge">🌐 Online · 4 Weeks</div>
+        <div class="exp-period">2024</div>
+        <div class="exp-company">CodSoft</div>
+        <div class="exp-role">Web Development Intern · Remote</div>
+        <p class="exp-desc">
+          Completed a 4-week online internship in web development. Worked on frontend projects using 
+          HTML, CSS, and JavaScript. Developed responsive user interfaces and improved skills in 
+          modern web development practices.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Responsibilities -->
+    <div style="margin-top: 3rem; text-align: center;" class="reveal">
+      <div style="display:inline-flex; align-items:center; gap:0.75rem; background:var(--bg-card); border:1px solid var(--border-color); border-radius:var(--radius); padding:1.25rem 2rem;">
+        <span style="font-size:2rem;">👥</span>
+        <div style="text-align:left;">
+          <div style="font-size:0.75rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.1em; font-weight:700; margin-bottom:0.2rem;">Leadership Role</div>
+          <div style="font-weight:600; font-size:0.95rem;">Co-Chairman — National Service Scheme</div>
+          <div style="font-size:0.82rem; color:var(--accent-secondary);">Dr. NGP Institute of Technology · 2024 – 2027</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CERTIFICATIONS ======================== -->
+<section id="certifications">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Credentials</span>
+      <h2 class="section-title">Certifications & <span>Courses</span></h2>
+    </div>
+
+    <div class="cert-grid">
+
+      <div class="cert-card reveal">
+        <div class="cert-icon-wrap">🏅</div>
+        <div>
+          <div class="cert-title">Full Stack Development (30 Days)</div>
+          <div class="cert-issuer">NoviTech · 2024</div>
+        </div>
+      </div>
+
+      <div class="cert-card reveal">
+        <div class="cert-icon-wrap">⌨️</div>
+        <div>
+          <div class="cert-title">Typewriting English Junior</div>
+          <div class="cert-issuer">Department of Technical Education, Tamil Nadu · 2023</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== ACHIEVEMENTS ======================== -->
+<section id="achievements">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Recognition</span>
+      <h2 class="section-title">Achievements & <span>Awards</span></h2>
+    </div>
+
+    <div class="achievements-list">
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">💻</div>
+        <div class="achievement-text">
+          <strong>ICT Hackathon Finalist</strong>
+          Hackathon conducted by ICT — Finalist, 2025
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🌍</div>
+        <div class="achievement-text">
+          <strong>Noble World Record Holder</strong>
+          3-hour Silambam Rotation — 2023
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🥇</div>
+        <div class="achievement-text">
+          <strong>Triple Gold & Triple Silver</strong>
+          District & State Silambam Championships (2023–2024)
+        </div>
+      </div>
+
+      <div class="achievement-card reveal">
+        <div class="achievement-icon">🇮🇳</div>
+        <div class="achievement-text">
+          <strong>NSS State Republic Day Parade</strong>
+          Represented NSS — State Republic Day, Chennai (2023)
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CONTACT ======================== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-tag">Get In Touch</span>
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+    </div>
+
+    <div class="contact-inner">
+      <div class="reveal-left">
+        <h3 class="contact-info-title">Have a project in mind or just want to <span>say hi?</span></h3>
+        <p class="contact-info-desc">
+          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision. 
+          Reach out and let's build something amazing together.
+        </p>
+        <div class="contact-info-items">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📧</div>
+            <div class="contact-info-text">
+              <strong>Email</strong>
+              <a href="mailto:pavisaravanan.2006@gmail.com" target="_blank">pavisaravanan.2006@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+              <strong>Location</strong>
+              <span>Pitchampalayam, Tirupur, Tamil Nadu</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">💼</div>
+            <div class="contact-info-text">
+              <strong>LinkedIn</strong>
+              <a href="https://linkedin.com/in/Pavithradharshini_saravanan" target="_blank">Pavithradharshini_saravanan</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🐙</div>
+            <div class="contact-info-text">
+              <strong>GitHub</strong>
+              <a href="https://github.com/Pavithradharshini-Saravanan" target="_blank">Pavithradharshini-Saravanan</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">🟨</div>
+            <div class="contact-info-text">
+              <strong>LeetCode</strong>
+              <a href="https://leetcode.com/u/Pavithradharshini_saravanan/" target="_blank">Pavithradharshini_saravanan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form reveal-right">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="contact-name">Your Name</label>
+            <input type="text" id="contact-name" placeholder="John Doe" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" placeholder="john@example.com" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="contact-subject">Subject</label>
+          <input type="text" id="contact-subject" placeholder="Job opportunity, collaboration..." />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Message</label>
+          <textarea id="contact-message" placeholder="Tell me about your project or say hello!"></textarea>
+        </div>
+        <button class="btn-primary" id="sendBtn" style="width:100%;justify-content:center;" onclick="handleContact()">
+          <span>Send Message</span>
+          <span>✉️</span>
+        </button>
+        <p id="form-feedback" style="margin-top:1rem;text-align:center;font-size:0.875rem;color:var(--accent-secondary);display:none;"></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer>
+  <div class="footer-brand">Pavithradharshini S.</div>
+  <p class="footer-text">© 2025 · Built with passion from Tirupur, Tamil Nadu 🌟</p>
+  <div class="footer-socials">
+    <a href="mailto:pavisaravanan.2006@gmail.com" target="_blank" class="social-link" title="Email">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/Pavithradharshini_saravanan" target="_blank" class="social-link" title="LinkedIn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+    </a>
+    <a href="https://github.com/Pavithradharshini-Saravanan" target="_blank" class="social-link" title="GitHub">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+    </a>
+    <a href="https://leetcode.com/u/Pavithradharshini_saravanan/" target="_blank" class="social-link" title="LeetCode">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"/></svg>
+    </a>
+  </div>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+<script src="app.js"></script>
+</body>
+</html>
