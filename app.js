@@ -47,7 +47,7 @@ backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 's
 
 // ---- TYPING EFFECT ----
 const typedEl = document.getElementById('typed-text');
-const roles = ['Full Stack Developer', 'MERN Stack Engineer', 'Web App Builder', 'Problem Solver'];
+const roles = ['Full Stack Developer', 'Problem Solver']; 
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 
 function typeRole() {
@@ -240,51 +240,6 @@ function drawParticles() {
 
 drawParticles();
 
-// ---- CONTACT FORM ----
-function handleContact() {
-  const name = document.getElementById('contact-name').value.trim();
-  const email = document.getElementById('contact-email').value.trim();
-  const subject = document.getElementById('contact-subject').value.trim();
-  const message = document.getElementById('contact-message').value.trim();
-  const feedback = document.getElementById('form-feedback');
-  const btn = document.getElementById('sendBtn');
-
-  if (!name || !email || !message) {
-    feedback.textContent = '⚠️ Please fill in your name, email, and message.';
-    feedback.style.color = '#f87171';
-    feedback.style.display = 'block';
-    return;
-  }
-
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-    feedback.textContent = '⚠️ Please enter a valid email address.';
-    feedback.style.color = '#f87171';
-    feedback.style.display = 'block';
-    return;
-  }
-
-  // Simulate send
-  btn.textContent = 'Sending...';
-  btn.disabled = true;
-
-  setTimeout(() => {
-    feedback.textContent = '✅ Thanks! Your message has been received. I\'ll get back to you soon!';
-    feedback.style.color = 'var(--accent-secondary)';
-    feedback.style.display = 'block';
-    btn.innerHTML = '<span>Message Sent!</span><span>✅</span>';
-    btn.disabled = false;
-
-    // Reset
-    setTimeout(() => {
-      document.getElementById('contact-name').value = '';
-      document.getElementById('contact-email').value = '';
-      document.getElementById('contact-subject').value = '';
-      document.getElementById('contact-message').value = '';
-      btn.innerHTML = '<span>Send Message</span><span>✉️</span>';
-      feedback.style.display = 'none';
-    }, 4000);
-  }, 1200);
-}
 
 // ---- SMOOTH SCROLL FOR ANCHOR LINKS ----
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
